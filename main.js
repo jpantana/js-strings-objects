@@ -7,13 +7,20 @@ const printToDom = (divId, textToPrint) => {
 // condtion test
 const iAmThirsty = (num) => {
   if (num < 21) {
-      return 'Maybe just drink water';
+      return 'Maybe just drink water <br />';
   } else if (num >= 21 && num <+65) {
-      return 'Have a beer!';
+      return 'Have a beer! <br />';
   } else {
-      return 'take a nap'
+      return 'take a nap <br />';
   }
 };
+
+const arrayAge = [55, 21, 11, 44];
+for (var i = 0; i < arrayAge.length; i++) {
+  printToDom('stillThirsty', iAmThirsty(arrayAge[i]));
+};
+
+
 
 
 // console.log(iAmThirsty(55));
@@ -31,7 +38,26 @@ printToDom('thirsty', iAmThirsty(20));
 printToDom('thirsty', iAmThirsty(67));
 
 
-const arrayAge = [55, 21, 11, 44];
+
+// console.log(1 === '1'); //false
+// console.log(1 == '1'); //true
+// console.log(1 !== '2'); //true
+
+
+// console.log('cats'.length); 
+
+// const quote = 'winter is coming';
+// console.log(quote.indexOf('is')); 
+
+
+
+
+
+
+
+
+
+// const arrayAge = [55, 21, 11, 44];
 
 // for (var i = 0; i < arrayAge.length; i++) {
 //     if (arrayAge[i] < 21) {
